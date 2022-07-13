@@ -20,18 +20,18 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="help"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/LkY2feKT2k0"),
-             InlineKeyboardButton("🤖 Support", url="https://t.me/HTDGROUPFORMOVIES")
+             InlineKeyboardButton("🗳 Deploy", url="https://www.youtube.com/channel/UCX1CbQN_Pczcawfpz-raO1g"),
+             InlineKeyboardButton("🤖 Support", url="https://t.me/nikhil_saini12")
              ]]
         else:
             buttons = [[
              InlineKeyboardButton("➕️ Add me to Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
              ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/LkY2feKT2k0"),
-             InlineKeyboardButton("🤖 Support", url="https://t.me/HTDGROUPFORMOVIES")
+             InlineKeyboardButton("🗳 Deploy", url="https://www.youtube.com/channel/UCX1CbQN_Pczcawfpz-raO1g"),
+             InlineKeyboardButton("🤖 Support", url="https://t.me/nikhil_saini12")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
